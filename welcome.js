@@ -22,7 +22,7 @@ function humanDelay(min = 2000, max = 6000) {
 // {user} = mention user, {name} = nama user tanpa mention
 const WELCOME_TEMPLATES = [
     'welcome yaaaa {user}!  semoga betah di murphy.',
-    'welcome yaa di server Murphy's {user} ! selamat datang yawww',
+    'welcome yaa di server Murphy\u2019s {user} ! selamat datang yawww',
     'wlecome {user} !',
     'yo {user}, welcome yaa! feel free to join the chat or voice, jangan lupa baca rules yaa',
     '{user} semoga betah dan enjoy disini yaa, jangan malu² buat nimbrung okeyy!',
