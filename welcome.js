@@ -4,7 +4,7 @@ const { Client } = require('discord.js-selfbot-v13');
 // =====================================================
 // KONFIGURASI - GANTI INI!
 // =====================================================
-const WELCOME_CHANNEL_ID = 'YOUR_TEXT_CHANNEL_ID_HERE'; // ⚠️ Ganti dengan ID channel text tempat welcome dikirim
+const WELCOME_CHANNEL_ID = '1542726294758756382'; // ⚠️ Ganti dengan ID channel text tempat welcome dikirim
 // =====================================================
 
 // Logging helper
