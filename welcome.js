@@ -5,6 +5,7 @@ const { Client } = require('discord.js-selfbot-v13');
 // KONFIGURASI - GANTI INI!
 // =====================================================
 const WELCOME_CHANNEL_ID = '1542726294758756382'; // ⚠️ Ganti dengan ID channel text tempat welcome dikirim
+const GUILD_ID = '1536009463582949396'; // ID server Murphy - cuma listen join dari server ini
 // =====================================================
 
 // Logging helper
@@ -103,6 +104,9 @@ client.on('ready', () => {
 // Trigger: ada member join guild
 client.on('guildMemberAdd', async (member) => {
     try {
+        // Cuma listen ke server Murphy
+        if (member.guild.id !== GUILD_ID) return;
+
         log(`👤 ${member.user.tag} (${member.user.id}) join guild: ${member.guild.name}`);
 
         // Cek cooldown
